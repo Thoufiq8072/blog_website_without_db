@@ -1,0 +1,26 @@
+<%- include("../views/partials/header.ejs") %>
+  <div class="container">
+    <h1>Home Page</h1>
+    <!-- Write the content for your page by replacing the <p> -->
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+    </p>
+    <% if(locals.posts){ %>
+      <% posts.forEach((post)=>{ %>
+      <div class="hedingTag">
+        <h1 class="titleTag"><%=post.title%></h1>
+        <!-- If You want give functionality to the edit and delete Button -->
+        <button class="editTag"><img src="images\pen-fill.svg" height="25px" alt="editImage" ></button>
+        <button class="deleleTag"><img src="images\trash-fill.svg" height="25px" alt="TrashImage"></button>
+      </div>
+        <p><%=post.content.substring(0, 100) + " ..."%>
+        <a href="/posts/<%=post.title%>">Read More</a>
+        </p>
+        <% }) %>
+      <% }else{ %>
+        <p>Not updated</p>
+      <% } %>
+  </div>
+<%- include("../views/partials/footer.ejs") %>
+ 
+
+ 

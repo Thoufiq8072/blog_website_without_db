@@ -1,0 +1,17 @@
+<%- include("../views/partials/header.ejs") %>
+<div class="container">
+  <br>
+<h1>Compose</h1>
+<br><br>
+<form action="/create" method="post">
+  <div>
+    <label for="title-name" class="form-label">Title Name</label>
+    <input class="form-control" type="text" name="title-name" id="title-name"><br>
+    <label for="content" class="form-label">Content</label>
+    <textarea name="content" class="form-control" id="content" rows="5"></textarea>
+  </div><br>
+  <button class="btn btn-primary" type="submit">Publish</button>
+</form>
+</div>
+
+<%- include("../views/partials/footer.ejs") %>

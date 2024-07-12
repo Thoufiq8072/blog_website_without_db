@@ -1,0 +1,57 @@
+h1{
+  color: red;
+}
+
+.contactContainer > h3 {
+  color: green;
+}
+
+.contactContainer > h1 {
+  color: rgb(221, 19, 19);  
+  font-size: 60px;
+}
+
+.titleTag{
+  color: black;
+}
+
+.container > p {
+  font-size: 20px;
+  display: inline;
+  padding-left: 25px;
+
+}
+
+.contactContainer > p {
+  font-size: 20px;
+  display: inline;
+  padding-left: 25px;
+
+}
+
+.contactContainer > h5{
+  font-weight: 400;
+}
+
+label{
+  display: block;
+  color: blueviolet;
+}
+
+.hedingTag{
+  display: flex;
+  gap: 10px;
+}
+
+.hedingTag > button{
+  padding: none;
+  padding-top: 5px;
+  border: none;
+  background: none;
+}
+
+
+
+
+
+
